@@ -1,7 +1,6 @@
 package com.alura.powertracker.domain;
 
 import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,11 +9,15 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode
-public class AddressDTO {
+public class Address {
+
   private String street;
+
   private int number;
+
   private String neighbourhood;
+
   private String city;
+
   private String state;
 }
