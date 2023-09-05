@@ -1,4 +1,4 @@
-# Alura - Tech Challenge Fase I
+# Alura - Tech Challenge Fase II
 
 ## Resumo:
 Este projeto implementa o desenvolvimento de um sistema WEB com interfaces e APIs para:
@@ -6,63 +6,62 @@ Este projeto implementa o desenvolvimento de um sistema WEB com interfaces e API
 - Cadastro dos endereços dos clientes, nos quais estarão os nossos adaptadores. 
 - Gestão de eletrodométicos para informações relacionadas aos eletrodomésticos de cada cliente. 
 
-## Descrição dos Endpoints da API
+## Descrição dos Endpoints das APIs
 
-### Cadastro de pessoas
+### Api de pessoas:
 
-- Endpoint: `POST localhost:8080/power_tracker/people`
-- Descrição: Este endpoint é usado para cadastrar novas pessoas.
-- Exemplo de entrada:
-    ```json
-    {
-        "name": "Isadora",
-        "cpf": "39946083094",
-        "birthday": "26/01/1989",
-        "gender": "female",
-        "relation": "daughter",
-        "liveTogether": false
-    }
-    ```
-- Resposta: Retorna uma mensagem de confirmação com o nome da pessoa se o cadastro foi bem-sucedido.
+- Endpoints:
+- `POST localhost:8080/power_tracker/person`
+- `GET localhost:8080/power_tracker/person`
+- `GET localhost:8080/power_tracker/person/{id}`
+- `PUT localhost:8080/power_tracker/person/{id}`
+- `DELETE localhost:8080/power_tracker/person/{id}`
+- Descrição: Estes endpoints são usados para cadastrar, alterar, buscar ou deletar pessoas.
 
-### Cadastro de endereços
 
-- Endpoint: `POST localhost:8080/power_tracker/address`
-- Descrição: Este endpoint é usado para cadastrar novos endereços.
-- Exemplo de entrada:
-    ```json
-    {
-        "street": "9 drive st",
-        "number": 702,
-        "neighbourhood": "Silbury",
-        "city": "Milton Keynes",
-        "state": "Buckinghamshire"
-    }
-    ```
-- Resposta: Retorna uma mensagem de confirmação se o cadastro do endereço foi bem-sucedido.
+### API de endereços:
 
-### Cadastro de eletrodomésticos
+- Endpoints:
+- `POST localhost:8080/power_tracker/address`
+- `GET localhost:8080/power_tracker/address`
+- `GET localhost:8080/power_tracker/address/{id}`
+- `PUT localhost:8080/power_tracker/address/{id}`
+- `DELETE localhost:8080/power_tracker/address/{id}`
+- Descrição: Estes endpoints são usados para cadastrar, alterar, buscar ou deletar endereços.
 
-- Endpoint: `POST localhost:8080/power_tracker/appliance`
-- Descrição: Este endpoint é usado para cadastrar novos eletrodomésticos.
-- Exemplo de entrada:
-    ```json
-    {
-        "name": "Oven",
-        "model": "Phillips-24636837R",
-        "wattage": 900,
-        "voltage": "220V"
-    }
-    ```
-- Resposta: Retorna uma mensagem de confirmação se o cadastro do eletrodoméstico foi bem-sucedido.
+
+### API de eletrodomésticos:
+
+- Endpoints:
+- `POST localhost:8080/power_tracker/appliance`
+- `GET localhost:8080/power_tracker/appliance`
+- `GET localhost:8080/power_tracker/appliance/{id}`
+- `PUT localhost:8080/power_tracker/appliance/{id}`
+- `DELETE localhost:8080/power_tracker/appliance/{id}`
+- Descrição: Estes endpoints são usados para cadastrar, alterar, buscar ou deletar eletrodomésticos.
+
+### Api de usuários:
+
+- Endpoints:
+- `POST localhost:8080/power_tracker/user`
+- `GET localhost:8080/power_tracker/user`
+- `GET localhost:8080/power_tracker/user/{id}`
+- `PUT localhost:8080/power_tracker/user/{id}`
+- `DELETE localhost:8080/power_tracker/user/{id}`
+- Descrição: Estes endpoints são usados para cadastrar, alterar, buscar ou deletar usuários.
 
 ## Requisitos
 * JDK 17+
 * Maven
 * JMapper 1+
 * Spring Web
+* Jpa
+* Colima
+* Docker
+* DBeaver Data
 
 ## Testes
+TDB
 
 ## Desenvolvedora
 * Isadora Mendonça de Oliveira [isadora.mendonca@mercadolivre.com](mailto:isadora.mendonca@mercadolivre.com)
