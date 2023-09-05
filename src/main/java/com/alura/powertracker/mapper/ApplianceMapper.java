@@ -1,20 +1,30 @@
 package com.alura.powertracker.mapper;
 
-import com.alura.powertracker.domain.Appliance;
-import com.alura.powertracker.domain.model.ApplianceDTO;
+import com.alura.powertracker.entity.Appliance;
+import com.alura.powertracker.entity.model.ApplianceDTO;
 
 public class ApplianceMapper {
 
   public static Appliance toEntity(ApplianceDTO applianceDTO) {
-    if (applianceDTO == null) {
-      return null;
-    }
+    return new Appliance(applianceDTO);
+  }
 
-    Appliance appliance = new Appliance();
-    appliance.setName(applianceDTO.getName());
-    appliance.setModel(applianceDTO.getModel());
-    appliance.setWattage(applianceDTO.getWattage());
-    appliance.setVoltage(applianceDTO.getVoltage());
+  public static ApplianceDTO fromEntity(Appliance appliance) {
+
+    return new ApplianceDTO(
+        appliance.getId(),
+        appliance.getName(),
+        appliance.getModel(),
+        appliance.getWattage(),
+        appliance.getVoltage()
+    );
+  }
+
+  public static Appliance mapperDtoToEntity(ApplianceDTO applianceDTO, Appliance appliance) {
+    appliance.setName(applianceDTO.name());
+    appliance.setModel(applianceDTO.model());
+    appliance.setWattage(applianceDTO.wattage());
+    appliance.setVoltage(applianceDTO.voltage());
     return appliance;
   }
 }

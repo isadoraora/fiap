@@ -9,5 +9,4 @@ public class PowerTrackerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PowerTrackerApplication.class, args);
 	}
-
 }
