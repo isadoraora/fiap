@@ -14,10 +14,13 @@ As seguintes tecnologias e ferramentas foram utilizadas no desenvolvimento do pr
 - Postman: Utilizado para testar e documentar as APIs.
 - Lombok: Biblioteca Java que ajuda a reduzir o código boilerplate.
 - JMapper: Utilizado para o mapeamento entre DTOs e entidades.
+- Spring Data JPA: Interage com bancos de dados relacionais de uma forma orientada a objetos, abstraindo muitos dos detalhes de implementação específicos do banco de dados.
+- Colima: Ferramenta que facilita a execução do Docker (e Kubernetes) em máquinas Mac, especialmente para aqueles que usam chip M1. A ideia por trás do Colima é fornecer um ambiente mais simples e leve para executar contêineres.
 
 ### Experiência Pessoal
 Tenho trabalhado com Java há um ano e meio, complementando minha prática profissional com estudos autodidatas. Durante essa jornada, acabei incorporando alguns hábitos de outros desenvolvedores, incluindo certas práticas de codificação cujos motivos ou eficiência nem sempre compreendia plenamente. Esta experiência me mostrou a importância de entender completamente as técnicas que estou utilizando, de modo a garantir que estou aderindo aos padrões de desenvolvimento adequados.
 
 Para este projeto, pude aplicar várias habilidades e conceitos que já fazem parte do meu cotidiano profissional. Embora o projeto ainda esteja em um estágio inicial, sinto que fui capaz de aplicar essas técnicas sem enfrentar problemas significativos.
+
 ### Próximos Passos
-Meu objetivo é continuar desenvolvendo minhas habilidades e conhecimentos em Java e Spring Boot. Estou comprometido em buscar sempre as melhores práticas e explorar métodos mais eficientes para implementar as funcionalidades necessárias. Acredito firmemente no valor do aprendizado contínuo e da melhoria constante, e estou ansioso para ver onde essa jornada me levará.
+Meu objetivo é continuar desenvolvendo minhas habilidades e conhecimentos em Java e Spring Boot. Estou comprometida em buscar sempre as melhores práticas e explorar métodos mais eficientes para implementar as funcionalidades necessárias. Acredito firmemente no valor do aprendizado contínuo e da melhoria constante, e estou ansiosa para ver onde essa jornada me levará.
